@@ -46,3 +46,8 @@ In the past, I was a professional eSports player for about 6 years. This industr
 * HTML Academy:  
   * [HTML + CSS + practice](https://htmlacademy.ru/courses)  
 * [FreeCodeCamp](https://www.freecodecamp.org/)  
+
+### Languages:
+* Russian - native language  
+* English - B2  
+In my old job, I often had to work in English due to the multinational team.
