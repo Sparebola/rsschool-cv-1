@@ -40,9 +40,9 @@ In the past, I was a professional eSports player for about 6 years. This industr
 }; 
 ```
 ### Education: 
-* Udemy  
- * [JavaScript + React](https://www.udemy.com/course/javascript_full/)  
- * [Advanced JavaScript](https://www.udemy.com/course/javascript_practice/)  
-* html academy  
- * [HTML + CSS + practice](https://htmlacademy.ru/courses)  
+* Udemy:    
+  * [JavaScript + React](https://www.udemy.com/course/javascript_full/)  
+  * [Advanced JavaScript](https://www.udemy.com/course/javascript_practice/)  
+* HTML Academy:  
+  * [HTML + CSS + practice](https://htmlacademy.ru/courses)  
 * [FreeCodeCamp](https://www.freecodecamp.org/)  
