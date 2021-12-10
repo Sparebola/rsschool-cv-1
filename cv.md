@@ -19,7 +19,7 @@ In the past, I was a professional eSports player for about 6 years. This industr
 
 ### Code example
 
-[Description](https://www.codewars.com/kata/55983863da40caa2c900004e)
+**[Description of the task](https://www.codewars.com/kata/55983863da40caa2c900004e)**
 
 **Solution:**
 ``` function nextBigger(n) {
@@ -37,4 +37,4 @@ In the past, I was a professional eSports player for about 6 years. This industr
     }
   }
   return +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("")
-}```
+} ```
