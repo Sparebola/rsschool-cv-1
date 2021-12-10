@@ -6,3 +6,6 @@
 **Telegram:** [Aoi Haru](@AoiHaru1)
 **Discord:** Aoi Haru#2047
 
+### About Me
+In the past, I was a professional eSports player for about 6 years. This industry is very shaky for many reasons, so I redirected all my enthusiasm and attention towards front-end development, which captivated me headlong. For some reason, I always thought that programmers are some kind of super-humans, but when my good friends opened my eyes to the fact that everything is not so scary here and you can constantly improve yourself as in the same video games - I just fired up with happiness.
+
