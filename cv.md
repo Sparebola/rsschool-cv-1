@@ -22,22 +22,22 @@ In the past, I was a professional eSports player for about 6 years. This industr
 **[Description of the task](https://www.codewars.com/kata/55983863da40caa2c900004e)**
 
 **Solution:**
-``` function nextBigger(n) {
-  const arr = String(n).split("");
-  for (var i = arr.length; i > 0; i--) {
-    if (arr[i] > arr[i - 1]) {
-      let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0];
-      for (let j = i + 1; j < arr.length; j++) {
-        counter++;
-        arr[j] > check && arr[j] < swap ? (mainCo = counter, swap = arr[j]) : null;
-      }
-      arr[i + mainCo] = arr[i - 1];
-      arr[i - 1] = swap;
-      break
-    }
-  }
-  return +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("")
-}; 
+``` function nextBigger(n) {  
+  const arr = String(n).split("");  
+  for (var i = arr.length; i > 0; i--) {  
+    if (arr[i] > arr[i - 1]) {  
+      let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0];  
+      for (let j = i + 1; j < arr.length; j++) {  
+        counter++;  
+        arr[j] > check && arr[j] < swap ? (mainCo = counter, swap = arr[j]) : null;  
+      }  
+      arr[i + mainCo] = arr[i - 1];  
+      arr[i - 1] = swap;  
+      break  
+    }  
+  }  
+  return +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("")  
+};  
 ```
 ### Education: 
 * Udemy:    
