@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <img src="img/portrait.png" alt="cutie dogo" class="header__portrait">
+      <img src="img/portrait.png" alt="oogabooga" class="header__portrait">
       <h1 class="header__title">Kirill<br> Kolupaev</h1>
     </header>
     <main class="main">
@@ -20,7 +20,8 @@
         <h2 class="section__title">Contact information:</h2>
         <ul class="section__contact-list">
           <li class="section__contact-list-item"><b>E-mail:</b> snakeinwater1@gmail.com</li>
-          <li class="section__contact-list-item"><b>GitHub:</b> <a href="https://github.com/AoiHaru1">AoiHaru1</a></li>
+          <li class="section__contact-list-item"><b>GitHub:</b> <a href="https://github.com/AoiHaru1"
+              target=”_blank”>AoiHaru1</a></li>
           <li class="section__contact-list-item"><b>Telegram:</b> Aoi Haru</li>
           <li class="section__contact-list-item"><b>Discord:</b> Aoi Haru#2047</li>
         </ul>
@@ -51,63 +52,70 @@
       </section>
       <section class="code-example section">
         <h2 class="section__title">Code example:</h2>
-        <a href="https://www.codewars.com/kata/55983863da40caa2c900004e" class="section__task">TASK</a> <br>
+        <a href="https://www.codewars.com/kata/55983863da40caa2c900004e" target=”_blank” class="section__task">TASK</a>
+        <br>
         <span class="section__text-content">
           <b style="font-size: 28px">Solution:</b><br><br>
           <code>
             function nextBigger(n) { <br>
-              &nbspconst arr = String(n).split(""); <br>
-              &nbspfor (var i = arr.length; i > 0; i--) { <br>
-                &nbsp&nbspif (arr[i] > arr[i - 1]) { <br>
-                  &nbsp&nbsp&nbsplet [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0]; <br>
-                  &nbsp&nbsp&nbspfor (let j = i + 1; j < arr.length; j++) { <br>
-                    &nbsp&nbsp&nbsp&nbspcounter++; <br>
-                    &nbsp&nbsp&nbsp&nbsparr[j] > check && arr[j] < swap ? (mainCo = counter, swap = arr[j]) : null; <br>
-                    &nbsp&nbsp&nbsp} <br>
-                    &nbsp&nbsp&nbsparr[i + mainCo] = arr[i - 1]; <br>
-                    &nbsp&nbsp&nbsparr[i - 1] = swap; <br>
-                    &nbsp&nbsp&nbspbreak <br>
-                    &nbsp&nbsp} <br>
-                    &nbsp} <br>
-                    &nbspreturn +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("") <br>
+              &nbsp;const arr = String(n).split(""); <br>
+              &nbsp;for (var i = arr.length; i > 0; i--) { <br>
+                &nbsp;&nbsp;if (arr[i] > arr[i - 1]) { <br>
+                  &nbsp;&nbsp;&nbsp;let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0]; <br>
+                  &nbsp;&nbsp;&nbsp;for (let j = i + 1; j &lt; arr.length; j++) { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;counter++; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;arr[j] > check && arr[j] &lt; swap ? (mainCo = counter, swap = arr[j]) : null; <br>
+                    &nbsp;&nbsp;&nbsp;} <br>
+                    &nbsp;&nbsp;&nbsp;arr[i + mainCo] = arr[i - 1]; <br>
+                    &nbsp;&nbsp;&nbsp;arr[i - 1] = swap; <br>
+                    &nbsp;&nbsp;&nbsp;break <br>
+                    &nbsp;&nbsp;} <br>
+                    &nbsp;} <br>
+                    &nbsp;return +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("") <br>
             }<br>
           </code>
         </span>
       </section>
       <section class="education section">
         <h2 class="section__title">Education:</h2>
-          <ul class="section__education-list">
-            <li class="section__education-list-item">
-              Udemy:
-              <ul class="section__udemy-list">
-                <li><a href="https://www.udemy.com/course/javascript_full/" class="section__link-item">JavaScript + React</a></li>
-                <li><a href="https://www.udemy.com/course/javascript_practice/" class="section__link-item">Advanced JavaScript</a></li>
-              </ul>
-            </li>
-            <li class="section__education-list-item"><a href="https://htmlacademy.ru/courses" class="section__link-item">HTML Academy</a></li>
-            <li class="section__education-list-item"><a href="https://www.freecodecamp.org/" class="section__link_item">FreeCodeCamp</a></li>
-          </ul>
+        <ul class="section__education-list">
+          <li class="section__education-list-item">
+            Udemy:
+            <ul class="section__udemy-list">
+              <li><a href="https://www.udemy.com/course/javascript_full/" target=”_blank”
+                  class="section__link-item">JavaScript + React</a></li>
+              <li><a href="https://www.udemy.com/course/javascript_practice/" target=”_blank”
+                  class="section__link-item">Advanced JavaScript</a></li>
+            </ul>
+          </li>
+          <li class="section__education-list-item"><a href="https://htmlacademy.ru/courses" target=”_blank”
+              class="section__link-item">HTML Academy</a></li>
+          <li class="section__education-list-item"><a href="https://www.freecodecamp.org/" target=”_blank”
+              class="section__link_item">FreeCodeCamp</a></li>
+        </ul>
       </section>
       <section class="languages section">
         <h2 class="section__title">Languages:</h2>
         <ul class="section__language-list">
           <li class="section__language-list-item">Russian - native language</li>
-          <li class="section__language-list-item">English - B2 (In my old job, I often had to work in English due to the multinational team.)</li>
+          <li class="section__language-list-item">English - B2 (In my old job, I often had to work in English due to the
+            multinational team.)</li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__links">
-        <img src="./icons/telegram.png" alt="telegram" class="telegram-icon footer__item">
-        <img src="./icons/gmail.png" alt="gmail" class="gmail-icon footer__item">
-        <img src="./icons/github.png" alt="github" class="github-icon footer__item">
-        <img src="./icons/discord.png" alt="discord" class="discord-icon footer__item">
-      </div>
       <div class="footer__project-info">
-        <p class="footer__year"></p>
-        <p class="footer__creator-name"></p>
+        <p class="footer__year">2021</p>
+        <p class="footer__creator-name">Kirill K.</p>
       </div>
-      <img src="./img/rs_school.svg" alt="rsschool" class="footer__rs-logo">
+      <a href="https://rs.school/js/" target=”_blank”><img src="./img/rs_school.svg" alt="rsschool" class="footer__rs-logo"></a>
+      <div class="footer__links">
+        <a href="https://t.me/AoiHaru1" target=”_blank”><img src="./icons/telegram.png" alt="telegram"
+            class="telegram-icon footer__item"></a>
+        <a><img src="./icons/gmail.png" alt="gmail" class="gmail-icon footer__item"></a>
+        <a href="https://github.com/AoiHaru1" target=”_blank”><img src="./icons/github.png" alt="github" class="github-icon footer__item"></a>
+        <a><img src="./icons/discord.png" alt="discord" class="discord-icon footer__item"></a>
+      </div>
     </footer>
   </div>
 </body>
