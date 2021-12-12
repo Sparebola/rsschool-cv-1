@@ -18,21 +18,67 @@
       <section class="contact-info section">
         <h2 class="section__title">Contact information:</h2>
         <ul class="section__contact-list">
-          <li class="section__list-item"><b>E-mail:</b> snakeinwater1@gmail.com</li>
-          <li class="section__list-item"><b>GitHub:</b> AoiHaru1</li>
-          <li class="section__list-item"><b>Telegram:</b> Aoi Haru</li>
-          <li class="section__list-item"><b>Discord:</b> Aoi Haru#2047</li>
+          <li class="section__contact-list-item"><b>E-mail:</b> snakeinwater1@gmail.com</li>
+          <li class="section__contact-list-item"><b>GitHub:</b> AoiHaru1</li>
+          <li class="section__contact-list-item"><b>Telegram:</b> Aoi Haru</li>
+          <li class="section__contact-list-item"><b>Discord:</b> Aoi Haru#2047</li>
         </ul>
       </section>
       <section class="about-me section">
         <h2 class="section__title">About Me:</h2>
         <span class="section__text-content">
-          In the past, I was a professional eSports player for about 6 years. This industry is very shaky for many reasons, so I redirected 
-          all my enthusiasm and attention towards front-end development, which captivated me headlong. For some reason, I always thought that 
-          programmers are some kind of super-humans, but when my good friends opened my eyes to the fact that everything is not so scary here 
-          and you can constantly improve yourself as in the same video games - I just fired up with happiness. My goal is to become a good 
+          In the past, I was a professional eSports player for about 6 years. This industry is very shaky for many
+          reasons, so I redirected
+          all my enthusiasm and attention towards front-end development, which captivated me headlong. For some reason,
+          I always thought that
+          programmers are some kind of super-humans, but when my good friends opened my eyes to the fact that everything
+          is not so scary here
+          and you can constantly improve yourself as in the same video games - I just fired up with happiness. My goal
+          is to become a good
           specialist in this field, and I know for sure that I will definitely have enough purposefulness for this.
         </span>
+      </section>
+      <section class="my-skills section">
+        <h2 class="section__title">My skills:</h2>
+        <ul class="section__skill-list">
+          <li class="section__skill-list-item">Advanced JS</li>
+          <li class="section__skill-list-item">HTML, CSS(SASS, Bootstrap)</li>
+          <li class="section__skill-list-item">git, npm</li>
+          <li class="section__skill-list-item">Figma, Adobe Photoshop</li>
+          <li class="section__skill-list-item">VSCode</li>
+        </ul>
+      </section>
+      <section class="code-example section">
+        <h2 class="section__title">Code example:</h2>
+        <a href="https://www.codewars.com/kata/55983863da40caa2c900004e" class="section__link"></a>
+        <span class="section__text-content">
+          <b>Solution:</b> <code>function nextBigger(n) {<br> const arr = String(n).split("");<br> for (var i = arr.length; i > 0; i--) {<br> if
+          (arr[i] > arr[i - 1]) {<br> let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0];<br> for (let j = i + 1; j
+          < arr.length; j++) {<br> counter++; arr[j]> check && arr[j] < swap ? (mainCo=counter, swap=arr[j]) : null;<br> }<br> arr[i
+              + mainCo]=arr[i - 1];<br> arr[i - 1]=swap;<br> break<br> }<br> }<br> return +arr.join("")===n ? -1 :
+              +arr.concat(arr.splice(i).sort((a, b)=> +a - +b)).join("")<br> };</code>
+        </span>
+      </section>
+      <section class="education section">
+        <h2 class="section__title">Education:</h2>
+          <ul class="section__education-list">
+            <li class="section__education-list-item">
+              Udemy:
+              <ul class="section__udemy-list">
+                <li><a href="https://www.udemy.com/course/javascript_full/" class="section__link-item">JavaScript + React</a></li>
+                <li><a href="https://www.udemy.com/course/javascript_practice/" class="section__link-item">Advanced JavaScript</a></li>
+              </ul>
+            </li>
+            <li class="section__education-list-item"><a href="https://htmlacademy.ru/courses" class="section__link-item">HTML Academy</a></li>
+            <li class="section__education-list-item"><a href="https://www.freecodecamp.org/" class="section__link_item">FreeCodeCamp</a></li>
+          </ul>
+      </section>
+      <section class="languages section">
+        <h2 class="section__title">Languages:</h2>
+        <ul class="section__language-list">
+          <li class="section__language-list-item">Russian - native language</li>
+          <li class="section__language-list-item">English - B2 (In my old job, I often had to work in English due to the multinational team.)</li>
+        </ul>
       </section>
     </main>
   </div>
