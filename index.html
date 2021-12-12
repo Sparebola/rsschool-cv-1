@@ -54,21 +54,21 @@
         <span class="section__text-content">
           <b>Solution:</b><br>
           <code>
-            function nextBigger(n) {
-              const arr = String(n).split("");
-              for (var i = arr.length; i > 0; i--) {
-                if (arr[i] > arr[i - 1]) {
-                  let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0];
-                  for (let j = i + 1; j < arr.length; j++) {
-                    counter++;
-                    arr[j] > check && arr[j] < swap ? (mainCo = counter, swap = arr[j]) : null;
-                  }
-                  arr[i + mainCo] = arr[i - 1];
-                  arr[i - 1] = swap;
-                  break
-                }
-              }
-              return +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("")
+            function nextBigger(n) { <br>
+              &nbspconst arr = String(n).split(""); <br>
+              &nbspfor (var i = arr.length; i > 0; i--) { <br>
+                &nbsp&nbspif (arr[i] > arr[i - 1]) { <br>
+                  &nbsp&nbsp&nbsplet [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0]; <br>
+                  &nbsp&nbsp&nbspfor (let j = i + 1; j < arr.length; j++) { <br>
+                    &nbsp&nbsp&nbsp&nbspcounter++; <br>
+                    &nbsp&nbsp&nbsp&nbsparr[j] > check && arr[j] < swap ? (mainCo = counter, swap = arr[j]) : null; <br>
+                    &nbsp&nbsp&nbsp} <br>
+                    &nbsp&nbsp&nbsparr[i + mainCo] = arr[i - 1]; <br>
+                    &nbsp&nbsp&nbsparr[i - 1] = swap; <br>
+                    &nbsp&nbsp&nbspbreak <br>
+                    &nbsp&nbsp} <br>
+                    &nbsp} <br>
+                    &nbspreturn +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("") <br>
             }
           </code>
         </span>
