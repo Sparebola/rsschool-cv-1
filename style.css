@@ -28,6 +28,14 @@
   letter-spacing: 16px;
 }
 
+.section__title {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  margin-top: 25px;
+  margin-left: 5px;
+  font-size: 35px;
+}
+
 .footer__item {
   display: none;
 }
@@ -36,10 +44,39 @@
   display: none;
 }
 
+.section__text-content {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 20px;
+  border: 1px solid red;
+}
+
+.code-example .section__text-content {
+  display: block;
+  
+}
+
+.section__task {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid red;
+}
 
 @media (max-width: 1200px) {
   .header__title {
     font-size: 70px;
+  }
+  .section__title {
+    font-size: 33px;
   }
 }
 
@@ -48,6 +85,9 @@
     font-size: 68px;
     margin-left: 9%;
     letter-spacing: 13px;
+  }
+  .section__title {
+    font-size: 31px;
   }
 }
 
@@ -58,6 +98,9 @@
     line-height: 50px;
     letter-spacing: 12px;
   }
+  .section__title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -66,6 +109,9 @@
     margin-left: 7%;
     line-height: 50px;
     letter-spacing: 10px;
+  }
+  .section__title {
+    font-size: 25px;
   }
 }
 
@@ -76,6 +122,15 @@
     line-height: 50px;
     letter-spacing: 7px;
   }
+  .section__title {
+    font-size: 22px;
+  }
+
+  .section__text-content {
+    display: inline-block;
+    margin-left: 13px;
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -85,13 +140,28 @@
     line-height: 32px;
     letter-spacing: 3px;
   }
+  .section__title {
+    font-size: 20px;
+  }
+
+  .section__text-content {
+    display: inline-block;
+    margin-left: 11px;
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 315px) {
   .header__title {
     font-size: 28px;
     margin-left: 3%;
     line-height: 28px;
     letter-spacing: 3px;
+  }
+
+  .section__text-content {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 17px;
   }
 }
