@@ -1,0 +1,97 @@
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.header__portrait {
+  max-width: 40%;
+  max-height: 40%;
+  border-radius: 50%;
+}
+
+.header__title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20%;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 16px;
+}
+
+.footer__item {
+  display: none;
+}
+
+.footer__rs-logo {
+  display: none;
+}
+
+
+@media (max-width: 1200px) {
+  .header__title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__title {
+    font-size: 68px;
+    margin-left: 9%;
+    letter-spacing: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__title {
+    font-size: 45px;
+    margin-left: 10%;
+    line-height: 50px;
+    letter-spacing: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 40px;
+    margin-left: 7%;
+    line-height: 50px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__title {
+    font-size: 40px;
+    margin-left: 3%;
+    line-height: 50px;
+    letter-spacing: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 35px;
+    margin-left: 2%;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 300px) {
+  .header__title {
+    font-size: 28px;
+    margin-left: 3%;
+    line-height: 28px;
+    letter-spacing: 3px;
+  }
+}
