@@ -11,8 +11,7 @@ In the past, I was a professional eSports player for about 6 years. This industr
 
 ### My skills:
 * Advanced JS  
-* HTML, CSS(SASS, Bootstrap)  
-* BEM  
+* HTML, CSS(SASS, Bootstrap)   
 * git, npm  
 * Figma, Adobe Photoshop  
 * VSCode
