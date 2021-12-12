@@ -52,11 +52,25 @@
         <h2 class="section__title">Code example:</h2>
         <a href="https://www.codewars.com/kata/55983863da40caa2c900004e" class="section__link"></a>
         <span class="section__text-content">
-          <b>Solution:</b> <code>function nextBigger(n) {<br> const arr = String(n).split("");<br> for (var i = arr.length; i > 0; i--) {<br> if
-          (arr[i] > arr[i - 1]) {<br> let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0];<br> for (let j = i + 1; j
-          < arr.length; j++) {<br> counter++; arr[j]> check && arr[j] < swap ? (mainCo=counter, swap=arr[j]) : null;<br> }<br> arr[i
-              + mainCo]=arr[i - 1];<br> arr[i - 1]=swap;<br> break<br> }<br> }<br> return +arr.join("")===n ? -1 :
-              +arr.concat(arr.splice(i).sort((a, b)=> +a - +b)).join("")<br> };</code>
+          <b>Solution:</b><br>
+          <code>
+            function nextBigger(n) {
+              const arr = String(n).split("");
+              for (var i = arr.length; i > 0; i--) {
+                if (arr[i] > arr[i - 1]) {
+                  let [swap, check, counter, mainCo] = [arr[i], arr[i - 1], 0, 0];
+                  for (let j = i + 1; j < arr.length; j++) {
+                    counter++;
+                    arr[j] > check && arr[j] < swap ? (mainCo = counter, swap = arr[j]) : null;
+                  }
+                  arr[i + mainCo] = arr[i - 1];
+                  arr[i - 1] = swap;
+                  break
+                }
+              }
+              return +arr.join("") === n ? -1 : +arr.concat(arr.splice(i).sort((a, b) => +a - +b)).join("")
+            }
+          </code>
         </span>
       </section>
       <section class="education section">
@@ -81,6 +95,19 @@
         </ul>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__links">
+        <img src="./icons/telegram.png" alt="telegram" class="telegram-icon footer__item">
+        <img src="./icons/gmail.png" alt="gmail" class="gmail-icon footer__item">
+        <img src="./icons/github.png" alt="github" class="github-icon footer__item">
+        <img src="./icons/discord.png" alt="discord" class="discord-icon footer__item">
+      </div>
+      <div class="footer__project-info">
+        <p class="footer__year"></p>
+        <p class="footer__creator-name"></p>
+      </div>
+      <img src="./img/rs_school.svg" alt="rsschool" class="footer__rs-logo">
+    </footer>
   </div>
 </body>
 
