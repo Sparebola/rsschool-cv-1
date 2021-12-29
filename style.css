@@ -12,8 +12,15 @@
 .header__portrait {
   max-width: 40%;
   max-height: 40%;
+  transform-style: preserve-3d;
   border-radius: 50%;
+  transition: transform 0.5s ease-in
 }
+
+.header__portrait:hover {
+  transform: rotateY(180deg);
+}
+
 
 .header__title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -90,7 +97,7 @@
 }
 
 .section__task {
-  font-size: 12vh;
+  font-size: 5vh;
 }
 
 p {
