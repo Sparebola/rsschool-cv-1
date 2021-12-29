@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1400px;
   margin-left: auto;
@@ -7,13 +11,41 @@
 .header {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  list-style: none;
+  font-size: 32px;
+  top: -20px;
+  right: 50px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(149, 146, 146, 0.472);
+  display: flex;
+  gap: 60px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .header__portrait {
   max-width: 40%;
   max-height: 40%;
+  transform-style: preserve-3d;
   border-radius: 50%;
+  transition: transform 0.5s ease-in
 }
+
+.header__portrait:hover {
+  transform: rotateY(180deg);
+}
+
 
 .header__title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -90,7 +122,7 @@
 }
 
 .section__task {
-  font-size: 12vh;
+  font-size: 5vh;
 }
 
 p {
@@ -130,6 +162,12 @@ p {
   height: 80px;
 }
 
+@media (max-width: 1400px) {
+ .list {
+  gap: 25px;
+  }
+}
+
 @media (max-width: 1200px) {
   .header__title {
     font-size: 70px;
@@ -138,6 +176,18 @@ p {
   .section__title {
     font-size: 33px;
   }
+
+  .list {
+    gap: 25px;
+    font-size: 29px;
+    }
+}
+
+@media (max-width: 1100px) {
+  .list {
+    gap: 17px;
+    font-size: 27px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -146,6 +196,11 @@ p {
     margin-left: 9%;
     letter-spacing: 13px;
   }
+
+  .list {
+    gap: 10px;
+    font-size: 20px;
+    }
 
   .section__title {
     font-size: 31px;
@@ -159,6 +214,10 @@ p {
     line-height: 50px;
     letter-spacing: 12px;
   }
+
+  .list {
+    display: none;
+    }
 
   .section__title {
     font-size: 28px;
